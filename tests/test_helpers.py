@@ -1,3 +1,5 @@
+# TODO: Learn how to have GitHub run pytest
+
 from my_package import helpers
 import numpy as np
 
