@@ -6,13 +6,23 @@ with open('README.md', 'r', encoding='utf-8') as f:
     long_description = f.read()
 
 
+# Note: If your package has many dependencies, you can include these in a requirements.txt file
+# Read the content of requirements.txt
+# with open("requirements.txt", "r") as f:
+#     requirements = f.read().splitlines()
+# Then use install_requires = requirements in the setup()
+
+# You can auto-generate requirements.txt using the following in your terminal:
+# pip install pipreqs
+# pipreqs /path/to/project
+
 setup(
     name = 'mypackage',                                 # Replace with your package name
     version='0.0.1',                                    # Set the package version
     description = 'A sample Python package',            # Describe your package
     author = 'Jake Rhodes',                             # Your name or the package author
-    author_email = 'youremail@example.com',             # Your email address
-    url = 'https://github.com/yourusername/mypackage',  # URL of your project repository
+    author_email = 'rhodes@stat.byu.edu',               # Your email address
+    url = 'github.com/rhodes-stat386-fall2023/package-example',  # URL of your project repository
     packages = find_packages(),                         # Automatically find all packages
     install_requires = [                                # List project dependencies
         'numpy',
@@ -33,7 +43,4 @@ setup(
 )
 
 
-# Note: If your package has many dependencies, you can include these in a requirements.txt file
-# This can be done using:
-# pip install pipreqs
-# pipreqs /path/to/project
+
