@@ -1,6 +1,6 @@
 # TODO: Learn how to have GitHub run pytest
 
-from my_package import helpers
+from mypackage import helpers
 import numpy as np
 
 def test_sum_to_one_row():
