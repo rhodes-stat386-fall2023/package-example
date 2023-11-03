@@ -38,7 +38,7 @@ setup(
     long_description = long_description,                # Use README content as long_description
     long_description_content_type = 'text/markdown',    # Specify the content type
     # package_data = {'mypackage': ['data/temples_raw.csv']}, # Dataset to include in package
-    data_files = [('temples_raw', ['data/temples_raw.csv'])],
+    data_files = [('data', ['temples_raw.csv'])],
 )
 
 
