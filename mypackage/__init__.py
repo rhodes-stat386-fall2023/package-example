@@ -1,1 +1,1 @@
-from helpers import sum_to_one
+from .helpers import sum_to_one
