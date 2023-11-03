@@ -5,6 +5,7 @@ import pandas as pd
 def load_data(name = 'data'):
     """
     Function to load clean or raw data from package.
+    Data is read in as a pandas DataFrame.
     Parameters
     ----------
     name : string
