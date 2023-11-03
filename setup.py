@@ -8,8 +8,8 @@ with open('README.md', 'r', encoding='utf-8') as f:
 
 # Note: If your package has many dependencies, you can include these in a requirements.txt file
 # Read the content of requirements.txt
-# with open("requirements.txt", "r") as f:
-#     requirements = f.read().splitlines()
+with open("requirements.txt", "r") as f:
+    requirements = f.read().splitlines()
 # Then use install_requires = requirements in the setup()
 
 # You can auto-generate requirements.txt using the following in your terminal:
@@ -24,10 +24,7 @@ setup(
     author_email = 'rhodes@stat.byu.edu',               # Your email address
     url = 'github.com/rhodes-stat386-fall2023/package-example',  # URL of your project repository
     packages = find_packages(),                         # Automatically find all packages
-    install_requires = [                                # List project dependencies
-        'numpy',
-        'pandas',
-    ],
+    install_requires = requirements,                    # Package dependences
     classifiers = [                                     # Add package classifiers (OPTIONAL)
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
