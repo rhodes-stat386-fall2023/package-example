@@ -1,6 +1,6 @@
 import pandas as pd
 
-def sum_to_one(x, axis=0):
+def sum_to_one(x, axis=1):
     """
     Normalize x so that the rows or columns sum to one.
 
@@ -9,7 +9,8 @@ def sum_to_one(x, axis=0):
         x : array_like
         Array to normalize
         axis : int, optional
-        Axis or axes along which a normalization is performed.        The default, axis = 1, will row-normalize x.
+        Axis or axes along which a normalization is performed.
+        The default, axis = 1, will row-normalize x.
 
     Returns
     -------
