@@ -37,6 +37,7 @@ setup(
     ],
     long_description = long_description,                # Use README content as long_description
     long_description_content_type = 'text/markdown',    # Specify the content type
+    package_data = {'temples_raw': 'data/temples_raw.csv'}
 )
 
 
