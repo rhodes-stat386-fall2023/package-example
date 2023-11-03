@@ -2,7 +2,7 @@ import pkg_resources
 import pandas as pd
 
 
-def load_data(name):
+def load_data(name = 'data'):
     """
     Function to load clean or raw data from package.
     Parameters
