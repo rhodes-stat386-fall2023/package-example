@@ -23,7 +23,9 @@ setup(
     author = 'Jake Rhodes',                             # Your name or the package author
     author_email = 'rhodes@stat.byu.edu',               # Your email address
     url = 'github.com/rhodes-stat386-fall2023/package-example',  # URL of your project repository
-    packages = find_packages(),                         # Automatically find all packages
+    packages = find_packages(exclude = ['clean_data.py', 
+                                        'scrape_data.py']),  
+                                                        # Automatically find all packages
     install_requires = requirements,                    # Package dependences
     classifiers = [                                     # Add package classifiers (OPTIONAL)
         'Development Status :: 3 - Alpha',
@@ -38,7 +40,6 @@ setup(
     long_description = long_description,                # Use README content as long_description
     long_description_content_type = 'text/markdown',    # Specify the content type
     package_data = {'mypackage': ['data/temple*.csv']}, # Dataset to include in package
-    # data_files = [('data', ['temples_raw.csv'])],
 )
 
 
