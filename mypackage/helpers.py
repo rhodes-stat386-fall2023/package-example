@@ -1,3 +1,5 @@
+import pandas as pd
+
 def sum_to_one(x, axis=0):
     """
     Normalize x so that the rows or columns sum to one.
@@ -21,4 +23,8 @@ def sum_to_one(x, axis=0):
     >>> sum_to_one(np.array([[1, 2], [3, 4]]))
     np.array([[.333333, .666667], [0.42857, 0.57142]])
     """
+
+    if isinstance(x, pd.DataFrame):
+        x = x.to_numpy()
+
     return x / x.sum(axis=axis, keepdims=True)
