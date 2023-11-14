@@ -9,7 +9,7 @@ import json
 
 url = 'https://www.churchofjesuschrist.org/temples/list?lang=eng'
 r = requests.get(url)
-soup = BeautifulSoup(r.content)
+soup = BeautifulSoup(r.content, parser = 'html.parser')
 json_data  = soup.find(id = '__NEXT_DATA__').string
 temple_dict = json.loads(json_data)
 
