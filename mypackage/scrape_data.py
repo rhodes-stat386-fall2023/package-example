@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 import json
 
 url = 'https://www.churchofjesuschrist.org/temples/list?lang=eng'
-r = requests.get(url, parser = 'html.parser')
+r = requests.get(url)
 soup = BeautifulSoup(r.content)
 json_data  = soup.find(id = '__NEXT_DATA__').string
 temple_dict = json.loads(json_data)
