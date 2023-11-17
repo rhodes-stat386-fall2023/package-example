@@ -9,7 +9,7 @@ def load_data(name = 'data'):
     Parameters
     ----------
     name : string
-    Options are 'data', and 'data_raw
+    Options are 'data', and 'data_raw'
 
     Returns
     -------

@@ -8,22 +8,22 @@ def my_pca_plot(x, save_name, n_components = 2, y = None):
 
     Parameters
     ----------
-        x : array_like
+    x : array_like
         Array to plot PCA
 
-        save_name: string
+    save_name: string
         The filename or path/filename to save the figure
 
-        n_components : int
+    n_components : int
         How many principal components to compute and plot
 
-        y : array_like
+    y : array_like
         Array of labels used to color the plots.
 
 
     Returns
     -------
-        None
+     None
     """
 
     pca_op = PCA(n_components = n_components)

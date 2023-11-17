@@ -6,15 +6,15 @@ def sum_to_one(x, axis=1):
 
     Parameters
     ----------
-        x : array_like
+    x : array_like
         Array to normalize
-        axis : int, optional
+    axis : int, optional
         Axis or axes along which a normalization is performed.
         The default, axis = 1, will row-normalize x.
 
     Returns
     -------
-        row_normalized_array : ndarray
+    row_normalized_array : ndarray
         An array with the same shape as `x`, with the specified
         axis removed. The array is normalized so the rows (axis = 1) or
         columns (axis = 0) sum to 1.
