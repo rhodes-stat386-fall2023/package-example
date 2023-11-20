@@ -18,7 +18,8 @@
         <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="mypackage" href="modules.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -41,8 +42,31 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="install.html">How to install mypackage:</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">mypackage</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">mypackage package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-mypackage.clean_data">mypackage.clean_data module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-mypackage.helpers">mypackage.helpers module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#mypackage.helpers.add"><code class="docutils literal notranslate"><span class="pre">add()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mypackage.helpers.sum_to_one"><code class="docutils literal notranslate"><span class="pre">sum_to_one()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-mypackage.load_data">mypackage.load_data module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#mypackage.load_data.load_data"><code class="docutils literal notranslate"><span class="pre">load_data()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-mypackage.plotting">mypackage.plotting module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#mypackage.plotting.my_pca_plot"><code class="docutils literal notranslate"><span class="pre">my_pca_plot()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-mypackage.scrape_data">mypackage.scrape_data module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-mypackage">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
         </div>
@@ -59,6 +83,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">mypackage</a></li>
       <li class="breadcrumb-item active">mypackage package</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/mypackage.rst.txt" rel="nofollow"> View page source</a>
@@ -80,6 +105,33 @@
 </section>
 <section id="module-mypackage.helpers">
 <span id="mypackage-helpers-module"></span><h2>mypackage.helpers module<a class="headerlink" href="#module-mypackage.helpers" title="Link to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="mypackage.helpers.add">
+<span class="sig-prename descclassname"><span class="pre">mypackage.helpers.</span></span><span class="sig-name descname"><span class="pre">add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mypackage/helpers.html#add"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mypackage.helpers.add" title="Link to this definition"></a></dt>
+<dd><p>Add two numbers.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a</strong> (<em>int</em><em> or </em><em>float</em>) – The first number to be added.</p></li>
+<li><p><strong>b</strong> (<em>int</em><em> or </em><em>float</em>) – The second number to be added.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The sum of the two input numbers.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int or float</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">add</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="go">5</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">add</span><span class="p">(</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">)</span>
+<span class="go">4.0</span>
+</pre></div>
+</div>
+</dd></dl>
+
 <dl class="py function">
 <dt class="sig sig-object py" id="mypackage.helpers.sum_to_one">
 <span class="sig-prename descclassname"><span class="pre">mypackage.helpers.</span></span><span class="sig-name descname"><span class="pre">sum_to_one</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mypackage/helpers.html#sum_to_one"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mypackage.helpers.sum_to_one" title="Link to this definition"></a></dt>
@@ -162,7 +214,9 @@ Data is read in as a pandas DataFrame.
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="modules.html" class="btn btn-neutral float-left" title="mypackage" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
 
   <hr/>
 

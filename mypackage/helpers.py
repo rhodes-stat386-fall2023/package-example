@@ -29,3 +29,29 @@ def sum_to_one(x, axis=1):
         x = x.to_numpy()
 
     return x / x.sum(axis=axis, keepdims=True)
+
+
+def add(a, b):
+    """
+    Add two numbers.
+
+    Parameters
+    ----------
+    a : int or float
+        The first number to be added.
+    b : int or float
+        The second number to be added.
+
+    Returns
+    -------
+    int or float
+        The sum of the two input numbers.
+
+    Examples
+    --------
+    >>> add(2, 3)
+    5
+    >>> add(1.5, 2.5)
+    4.0
+    """
+    return a + b
