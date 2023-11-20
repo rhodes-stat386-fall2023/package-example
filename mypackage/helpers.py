@@ -33,7 +33,7 @@ def sum_to_one(x, axis=1):
 
 def add(a, b):
     """
-    Add two numbers.
+    Add two numbers. a + b.
 
     Parameters
     ----------
