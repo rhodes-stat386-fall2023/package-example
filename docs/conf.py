@@ -18,10 +18,10 @@ sys.path.insert(0, os.path.abspath('..')) # change this from . to ..
 
 # -- Project information -----------------------------------------------------
 
-project = 'name'
-copyright = '2023, name'
-author = 'name'
-release = '0.0.1'
+project = 'test_sphinx'
+copyright = '2023, Tyler Ward'
+author = 'Tyler Ward'
+
 
 # -- General configuration ---------------------------------------------------
 
