@@ -1,19 +1,14 @@
-.. mypackage documentation master file, created by
-   sphinx-quickstart on Wed Nov 29 11:08:34 2023.
+.. name documentation master file, created by
+   sphinx-quickstart on Thu Dec  7 09:13:01 2023.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to mypackage's documentation!
-=====================================
+Welcome to name's documentation!
+================================
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Contents:
-
-   readme_link
-   my_markdown
-   modules
-
 
 
 
